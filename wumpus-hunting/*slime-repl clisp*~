@@ -1,0 +1,805 @@
+; SLIME 2.21;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in RANDOM-NODE in lines 11..12 : *NODE-SUM* is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following special variables were not defined:
+ *NODE-SUM*
+0 errors, 1 warning
+WARNING: in RANDOM-NODE : *NODE-SUM* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in RANDOM-NODE : *NODE-SUM* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in MAKE-EDGE-LIST : *EDGE-NUM* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+
+CL-USER> 
+; No value
+CL-USER> (make-edge-list)
+
+; No value;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas ...
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in RANDOM-NODE in lines 11..12 : *NODE-SUM* is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following special variables were not defined:
+ *NODE-SUM*
+0 errors, 1 warning
+WARNING: in MAKE-EDGE-LIST : *EDGE-NUM* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function RANDOM-NODE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function EDGE-PAIR in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-EDGE-LIST in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> (make-edge-list)
+((12 . 10) (10 . 12) (19 . 9) (9 . 19) (28 . 15) (15 . 28) (7 . 26) (26 . 7)
+ (27 . 28) (28 . 27) (22 . 7) (7 . 22) (1 . 12) (12 . 1) (29 . 25) (25 . 29)
+ (2 . 8) (8 . 2) (10 . 28) (28 . 10) (28 . 25) (25 . 28) (16 . 6) (6 . 16)
+ (10 . 28) (28 . 10) (20 . 1) (1 . 20) (29 . 8) (8 . 29) (12 . 30) (30 . 12)
+ (15 . 25) (25 . 15) (14 . 22) (22 . 14) (24 . 9) (9 . 24) (9 . 14) (14 . 9)
+ (29 . 5) (5 . 29) (18 . 4) (4 . 18) (27 . 20) (20 . 27) (16 . 30) (30 . 16)
+ (14 . 4) (4 . 14) (19 . 17) (17 . 19) (24 . 11) (11 . 24) (23 . 1) (1 . 23)
+ (24 . 22) (22 . 24) (13 . 25) (25 . 13) (14 . 3) (3 . 14) (17 . 28) (28 . 17)
+ (26 . 6) (6 . 26) (15 . 26) (26 . 15) (24 . 5) (5 . 24) (13 . 4) (4 . 13)
+ (24 . 22) (22 . 24) (18 . 9) (9 . 18) (8 . 6) (6 . 8) (15 . 7) (7 . 15)
+ (3 . 18) (18 . 3) (18 . 12) (12 . 18))
+CL-USER> (loop repeat 10 collect 1)
+(1 1 1 1 1 1 1 1 1 1)
+CL-USER> (loop repeat 10 collect (+ 100 n))
+
+; No valueWARNING: in GET-CONNECTED : Function TRAVERSE is not defined
+WARNING: in GET-CONNECTED : VISITED is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: function GET-CONNECTED-TRAVERSE is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in CONNECT-ALL-ISLANDS : Function FIND-ISLAND is not defined
+
+CL-USER> 
+; No value
+CL-USER> 
+; No valueWARNING: in ADD-COPS : variable EDGES-WITH-COPS is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in EDGES-TO-ALIST : NODE1 is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST : NODE1 is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in MAKE-CITY-EDGE : *NODE-SUM* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in MAKE-CITY-EDGE-1 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in MAKE-CITY-EDGE : Function ADD-COPS is not defined
+
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value1 error, 0 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGE in lines 55..63 : *NODE-SUM* is neither declared
+         nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in MAKE-CITY-EDGE-1 in lines 55..63 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following special variables were not defined:
+ *NODE-SUM* NODE1
+0 errors, 5 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function DIRECT-EDGES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function GET-CONNECTED in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function FIND-ISLANDS in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function CONNECT-WITH-BRIDGES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function CONNECT-ALL-ISLANDS in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function EDGES-TO-ALIST in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function ADD-COPS in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function WITHIN-TWO in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function NEIGHBORS in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function WITHIN-ONE in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 11 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGE in lines 55..63 : *NODE-SUM* is neither declared
+         nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in MAKE-CITY-EDGE-1 in lines 55..63 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following special variables were not defined:
+ *NODE-SUM* NODE1
+0 errors, 5 warnings
+WARNING: in MAKE-CITY-EDGE : *NODE-SUM* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in MAKE-CITY-EDGE-1 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGE in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function NEIGHBORS in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function WITHIN-ONE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function WITHIN-TWO in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp
+1 error, 16 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGE in lines 55..63 : *NODE-SUM* is neither declared
+         nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in MAKE-CITY-EDGE-1 in lines 55..63 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following special variables were not defined:
+ *NODE-SUM* NODE1
+0 errors, 5 warnings
+WARNING: in MAKE-CITY-EDGE-1 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGE in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp
+1 error, 17 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGE-1 in lines 55..63 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following special variables were not defined:
+ NODE1
+0 errors, 4 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 18 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGE-1 in lines 55..63 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : NODE1 is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST in lines 65..72 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following special variables were not defined:
+ NODE1
+0 errors, 4 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-NODES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: in NEW-GAME : Function MAKE-CITY-EDGES is not defined
+WARNING: in NEW-GAME : Function FIND-EMTPY-NODE is not defined
+WARNING: in NEW-GAME : *PLAYER-POS* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME : *PLAYER-POS* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME : Function DRAW-CITY is not defined
+WARNING: DEFUN/DEFMACRO: redefining function NEIGHBORS in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function WITHIN-ONE in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function WITHIN-TWO in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-NODES in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function ADD-COPS in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: in EDGES-TO-ALIST : NODE1 is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST : NODE1 is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in EDGES-TO-ALIST : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: DEFUN/DEFMACRO: redefining function EDGES-TO-ALIST in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: in MAKE-CITY-EDGE-1 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGE in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function CONNECT-WITH-BRIDGES in
+         top-level, was defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: in MAKE-CITY-EDGE-1 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in MAKE-CITY-EDGE-1 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in MAKE-CITY-EDGE-1 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+1 error, 27 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in NEW-GAME in lines 120..126 : *PLAYER-POS* is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME in lines 120..126 : *PLAYER-POS* is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following functions were used but not defined:
+ MAKE-CITY-EDGES FIND-EMTPY-NODE DRAW-CITY
+The following special variables were not defined:
+ *PLAYER-POS*
+0 errors, 2 warnings
+WARNING: in NEW-GAME : Function MAKE-CITY-EDGES is not defined
+WARNING: in NEW-GAME : *PLAYER-POS* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME : *PLAYER-POS* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME : Function DRAW-CITY is not defined
+1 error, 27 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in NEW-GAME in lines 120..126 : *PLAYER-POS* is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME in lines 120..126 : *PLAYER-POS* is neither declared nor
+         bound,
+         it will be treated as if it were declared SPECIAL.
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following functions were used but not defined:
+ DRAW-CITY
+The following special variables were not defined:
+ *PLAYER-POS*
+0 errors, 2 warnings
+WARNING: in NEW-GAME : *PLAYER-POS* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME : *PLAYER-POS* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME : Function DRAW-CITY is not defined
+WARNING: in NEW-GAME : *PLAYER-POS* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in NEW-GAME : *PLAYER-POS* is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+1 error, 27 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function CONNECT-WITH-BRIDGES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function EDGES-TO-ALIST in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function ADD-COPS in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function NEIGHBORS in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function WITHIN-ONE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function WITHIN-TWO in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-NODES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function NEW-GAME in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function FIND-EMTPY-NODE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function DRAW-CITY in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> (new-game)
+
+; No value
+CL-USER> 
+; No value1 error, 38 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 38 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 38 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 38 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas ...
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value1 error, 38 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas ...
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+WARNING: DEFUN/DEFMACRO: redefining function DOT-NAME in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+1 error, 39 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas ...
+WARNING: DEFUN/DEFMACRO: redefining function DOT-NAME in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value1 error, 40 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas ...
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+WARNING: DEFUN/DEFMACRO: redefining function DOT-NAME in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+WARNING: DEFUN/DEFMACRO: redefining function DOT-LABEL in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+WARNING: DEFUN/DEFMACRO: redefining function NODES->DOT in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+WARNING: DEFUN/DEFMACRO: redefining function EDGES->DOT in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+WARNING: DEFUN/DEFMACRO: redefining function GRAPH->DOT in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.fas
+1 error, 45 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 0 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+WARNING: DEFUN/DEFMACRO: redefining function DOT-NAME in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function DOT-LABEL in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function NODES->DOT in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function EDGES->DOT in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function GRAPH->DOT in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/graph-util.lisp,
+         was defined in top-level
+;;  Loaded file graph-util.lisp
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> (new-game)
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGES in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+
+; No value
+CL-USER> (make-city-edges)
+WARNING: in MAKE-CITY-EDGES-1 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+1 error, 51 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGES-1 in lines 58..66 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 1 warning
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function MAKE-CITY-EDGES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+
+; No value
+CL-USER> 
+; No value
+CL-USER> (make-city-edges)
+((25 (6)) (6 (25) (5)) (13 (8 COPS)) (3 (21)) (18 (27) (12) (23)) (5 (6) (22))
+ (24 (21)) (17 (12) (29)) (29 (17)) (8 (10) (11) (13 COPS) (30) (12 COPS))
+ (12 (18) (17) (2) (30 COPS) (8 COPS)) (21 (3) (24) (28) (15))
+ (15 (27) (9) (21)) (30 (8) (12 COPS) (14) (22)) (22 (26 COPS) (5) (30))
+ (14 (4) (30) (11)) (10 (8) (26) (19) (4)) (20 (19) (7)) (7 (16) (20) (9))
+ (9 (15) (28) (7)) (27 (18) (4) (15) (28)) (26 (28) (22 COPS) (10) (1))
+ (4 (14) (27) (28) (10) (23)) (23 (18) (4)) (2 (12) (16 COPS))
+ (28 (26) (4) (9) (21) (27) (16)) (19 (20) (10) (11 COPS))
+ (11 (8) (16) (14) (19 COPS)) (1 (26) (16)) (16 (7) (11) (2 COPS) (28) (1)))
+CL-USER> (new-game)
+NIL
+CL-USER> 
+; No valueWARNING: DEFUN/DEFMACRO: redefining function NEW-GAME in top-level, was
+         defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 53 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGES-1 in lines 58..66 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 1 warning
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function NEW-GAME in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function KNOWN-CITY-NODES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function KNOWN-CITY-EDGES in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function DRAW-KNOWN-CITY in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+
+CL-USER> 
+; No value
+CL-USER> (start-game)
+
+; No value
+CL-USER> 
+; No value
+CL-USER> (new-game)
+NIL
+1 error, 57 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGES-1 in lines 58..66 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in CHARGE in lines 174..175 : POST is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in CHARGE in lines 174..175 : variable POS is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following functions were used but not defined:
+ HUNDLE-NEW-PLACE
+The following special variables were not defined:
+ POST
+0 errors, 3 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 57 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGES-1 in lines 58..66 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in CHARGE in lines 174..175 : POST is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in CHARGE in lines 174..175 : variable POS is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following functions were used but not defined:
+ HUNDLE-NEW-PLACE
+The following special variables were not defined:
+ POST
+0 errors, 3 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 57 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGES-1 in lines 58..66 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in CHARGE in lines 174..175 : POST is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in CHARGE in lines 174..175 : variable POS is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following functions were used but not defined:
+ HUNDLE-NEW-PLACE
+The following special variables were not defined:
+ POST
+0 errors, 3 warnings
+WARNING: in CHARGE : POST is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in CHARGE : variable POS is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: DEFUN/DEFMACRO: redefining function CHARGE in top-level, was defined
+         in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function HANDLE-DIRECTION in top-level,
+         was defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: in HANDLE-NEW-PLACE : Function HUNDLE-NEW-PLACE is not defined
+WARNING: DEFUN/DEFMACRO: redefining function HANDLE-NEW-PLACE in top-level,
+         was defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: in HANDLE-NEW-PLACE : Function HUNDLE-NEW-PLACE is not defined
+1 error, 60 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGES-1 in lines 58..66 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: in CHARGE in lines 174..175 : POST is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in CHARGE in lines 174..175 : variable POS is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+The following special variables were not defined:
+ POST
+0 errors, 3 warnings
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function CHARGE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function HANDLE-DIRECTION in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function HANDLE-NEW-PLACE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function HANDLE-NEW-PLACE in top-level,
+         was defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function HANDLE-DIRECTION in top-level,
+         was defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> 
+; No valueWARNING: in CHARGE : POST is neither declared nor bound,
+         it will be treated as if it were declared SPECIAL.
+WARNING: in CHARGE : variable POS is not used.
+         Misspelled or missing IGNORE declaration?
+WARNING: DEFUN/DEFMACRO: redefining function CHARGE in top-level, was defined
+         in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+WARNING: DEFUN/DEFMACRO: redefining function WALK in top-level, was defined in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+1 error, 67 warnings
+;; Compiling file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.lisp ...
+WARNING: in MAKE-CITY-EDGES-1 in lines 58..66 : variable X is not used.
+         Misspelled or missing IGNORE declaration?
+;; Wrote file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+0 errors, 1 warning
+;; Loading file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas ...
+;;  Loading file graph-util.lisp ...
+;;  Loaded file graph-util.lisp
+WARNING: DEFUN/DEFMACRO: redefining function WALK in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function CHARGE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function HANDLE-DIRECTION in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+WARNING: DEFUN/DEFMACRO: redefining function HANDLE-NEW-PLACE in
+         /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas,
+         was defined in top-level
+;; Loaded file /Users/tom_red/work2018/land-of-lisp/wumpus-hunting/wumpus-hunting.fas
+
+CL-USER> 
+; No value
+CL-USER> 
+; No value
+CL-USER> (walk 21)
+That location does not exist!
+"That location does not exist!"
+CL-USER> (walk 2)
+That location does not exist!
+"That location does not exist!"
+CL-USER> (new-game)
+NIL
+CL-USER> (walk 28
+	       )
+NIL
+CL-USER> (walk 10)
+NIL
+CL-USER> (walk 3)
+NIL
+CL-USER> (walk 18)
+NIL
+CL-USER> (walk 7)
+NIL
+CL-USER> (walk 18)
+NIL
+CL-USER> (walk 29)
+NIL
+CL-USER> (walk 21)
+NIL
+CL-USER> (walk 16)
+NIL
+CL-USER> (walk 21)
+NIL
+CL-USER> (walk 4)
+NIL
+CL-USER> (walk 21)
+NIL
+CL-USER> (walk 27)
+NIL
+CL-USER> (walk 25)
+NIL
+CL-USER> (walk 20)
+NIL
+CL-USER> (walk 15)
+You ran into the Wumpus
+"You ran into the Wumpus"
+CL-USER> (walk 20)
+NIL
+CL-USER> (charge 15)
+You found the Wumpus!
+"You found the Wumpus!"
+CL-USER> 
