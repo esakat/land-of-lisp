@@ -19,3 +19,5 @@
 *.wx32fsl
 *.lib
 *.fas
+
+.DS_Store
