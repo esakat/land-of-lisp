@@ -1,6 +1,6 @@
 (defparameter *num-players* 2)
 (defparameter *max-dice* 3)
-(defparameter *board-size* 3)
+(defparameter *board-size* 2)
 (defparameter *board-hexnum* (* *board-size* *board-size*))
 
 ;; ゲーム版を配列表現へ
@@ -29,20 +29,15 @@
 				     (second hex))))))
 		     
 ;; ゲームツリー
-;; (defun game-tree (board player spare-dice first-move)
-;;   (list player
-;; 	board
-;; 	(add-passing-move board
-;; 			  player
-;; 			  spare-dice
-;; 			  first-move
-;; 			  (attacking-moves board player spare-dice))))
-;; ゲーム木をメモ化する
-(let ((old-game-tree (symbol-function 'game-tree))
-      (previous (make-hash-table :test #'equalp)))
-  (defun game-tree (&rest rest)
-    (or (gethash rest previous)
-	(setf (gethash rest previous) (apply old-game-tree rest)))))
+(defun game-tree (board player spare-dice first-move)
+  (list player
+	board
+	(add-passing-move board
+			  player
+			  spare-dice
+			  first-move
+			  (attacking-moves board player spare-dice))))
+
 
 ;; 相手に手番を渡す
 (defun add-passing-move (board player spare-dice first-move moves)
@@ -78,23 +73,16 @@
 		  collect n))))
 
 ;; 隣接するマスを見つける
-;; (defun neighbors (pos)
-;;   (let ((up (- pos *board-size*))
-;; 	(down (+ pos *board-size*)))
-;;     (loop for p in (append (list up down)
-;; 			   (unless (zerop (mod pos *board-size*))
-;; 			     (list (1- up) (1- pos)))
-;; 			   (unless (zerop (mod (1+ pos) *board-size*))
-;; 			     (list (1+ pos) (1+ down))))
-;; 	  when (and (>= p 0) (< p *board-hexnum*))
-;; 	    collect p)))
-;; neighbors関数にメモ化を導入する
-(let ((old-neighbors (symbol-function 'neighbors))
-      (previous (make-hash-table)))
-  (defun neighbors (pos)
-    (or (gethash pos previous)
-	(setf (gethash pos previous) (funcall old-neighbors pos)))))
-
+(defun neighbors (pos)
+  (let ((up (- pos *board-size*))
+	(down (+ pos *board-size*)))
+    (loop for p in (append (list up down)
+			   (unless (zerop (mod pos *board-size*))
+			     (list (1- up) (1- pos)))
+			   (unless (zerop (mod (1+ pos) *board-size*))
+			     (list (1+ pos) (1+ down))))
+	  when (and (>= p 0) (< p *board-hexnum*))
+	    collect p)))
 
 ;; 攻撃
 (defun board-attack (board player src dst dice)
@@ -167,28 +155,18 @@
 	(format t "The winner is ~a" (player-letter (car w))))))
 
 ;; ミニマックスアルゴリズムでAIが手を考える
-;; (defun rate-position (tree player)
-;;   (let ((moves (caddr tree)))
-;; 	(if moves
-;; 	    (apply (if (eq (car tree) player)
-;; 		       #'max
-;; 		       #'min)
-;; 		   (get-raitings tree player))
-;; 	    (let ((w (winners (cadr tree))))
-;; 	      (if (member player w)
-;; 		  (/ 1 (length w))
-;; 		  0)))))
-;; rate-position関数をメモ化する
-(let ((old-rate-position (symbol-function 'rate-position))
-      (previous (make-hash-table)))
-  (defun rate-position (tree player)
-    (let ((tab (gethash player previous)))
-      (unless tab
-	(setf tab (setf (gethash player previous) (make-hash-table))))
-      (or (gethash tree tab)
-	  (setf (gethash tree tab)
-		(funcall old-rate-position tree player))))))
-
+(defun rate-position (tree player)
+  (let ((moves (caddr tree)))
+	(if moves
+	    (apply (if (eq (car tree) player)
+		       #'max
+		       #'min)
+		   (get-raitings tree player))
+	    (let ((w (winners (cadr tree))))
+	      (if (member player w)
+		  (/ 1 (length w))
+		  0)))))
+	     
 (defun get-raitings (tree player)
   (mapcar (lambda (move)
 	    (rate-position (cadr move) player))
@@ -204,3 +182,43 @@
   (cond ((null (caddr tree)) (announce-winner (cadr tree)))
 	((zerop (car tree)) (play-vs-computer (handle-human tree)))
 	(t (play-vs-computer (handle-computer tree)))))
+
+;; neighbors関数にメモ化を導入する
+(let ((old-neighbors (symbol-function 'neighbors))
+      (previous (make-hash-table)))
+  (defun neighbors (pos)
+    (or (gethash pos previous)
+	(setf (gethash pos previous) (funcall old-neighbors pos)))))
+
+;; ゲーム木をメモ化する
+(let ((old-game-tree (symbol-function 'game-tree))
+      (previous (make-hash-table :test #'equalp)))
+  (defun game-tree (&rest rest)
+    (or (gethash rest previous)
+	(setf (gethash rest previous) (apply old-game-tree rest)))))
+
+;; rate-position関数をメモ化する
+(let ((old-rate-position (symbol-function 'rate-position))
+      (previous (make-hash-table)))
+  (defun rate-position (tree player)
+    (let ((tab (gethash player previous)))
+      (unless tab
+	(setf tab (setf (gethash player previous) (make-hash-table))))
+      (or (gethash tree tab)
+	  (setf (gethash tree tab)
+		(funcall old-rate-position tree player))))))
+
+;; add-new-diceを末尾呼び出し最適化
+(defun add-new-dice (board player spare-dice)
+  (labels ((f (lst n acc)
+	     (cond ((zerop n) (append (reverse acc) lst))
+		   ((null lst) (reverse acc))
+		   (t (let ((cur-player (caar lst))
+			    (cur-dice (caddr lst)))
+			(if (and (eq cur-player player)
+				 (< cur-dice *max-dice*))
+			    (f (cdr lst)
+			       (1- n)
+			       (cons (list cur-player (1+ cur-dice)) acc))
+			    (f (cdr lst) n (cons (car lst) acc))))))))
+    (board-array (f (coerce board 'list) spare-dice ()))))
