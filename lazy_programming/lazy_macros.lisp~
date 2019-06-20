@@ -1,0 +1,49 @@
+;; 遅延評価機能は標準機能でないので、macroで準備
+(defmacro lazy (&body body)
+  (let ((forced (gensym))
+	(value (gensym)))
+    `(let ((,forced nil)
+	   (,value nil))
+       (lambda ()
+	 (unless ,forced
+	   (setf ,value (progn ,@body))
+	   (setf ,forced t))
+	 ,value))))
+
+
+;; 遅延リストライブラリ
+(defmacro lazy-cons (a d)
+  `(lazy (cons ,a ,d)))
+
+(defun lazy-car (x)
+  (car (force x)))
+(defun lazy-cdr (x)
+  (cdr (force x)))
+(defun lazy-nil ()
+  (lazy nil))
+(defun lazy-null (x)
+  (not (force x)))
+
+
+;; 無限の正の整数を生成する
+(defparameter *integers*
+  (labels ((f (n)
+	     (lazy-cons n (f (1+ n)))))
+    (f 1)))
+
+;; 遅延リスト操作用の関数
+;; 通常のリストを遅延リストに変換する
+(defun make-lazy (lst)
+  (lazy (when lst
+	  (cons (car lst) (make-lazy (cdr lst))))))
+
+;; 遅延リストを通常のリストに変換する
+(defun take (n lst)
+  (unless (or (zerop n) (lazy-null lst))
+    (cons (lazy-car lst) (take (1- n) (lazy-cdr lst)))))
+
+(defun take-all (lst)
+  (unless (lazy-null lst)
+    (cons (lazy-car lst) (take-all (lazy-cdr lst)))))
+
+    
